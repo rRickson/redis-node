@@ -1,0 +1,42 @@
+{
+  "name": "redis-node",
+  "version": "1.0.0",
+  "description": "Redis Node Js - JavaScript",
+  "author": "Rickson",
+  "keywords": [
+    "node"
+  ],
+  "main": "main.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "coverage": "jest --colors --coverage",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "jest": "jest --colors --verbose",
+    "lint": "eslint 'src/**/*.js' 'test/**/*.js'",
+    "start": "node main.js",
+    "test": "npm run lint && npm run jest"
+  },
+  "bugs": {
+    "url": "https://github.com/rRickson/redis-node/issues"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "esm": "3.2.25",
+    "express": "4.17.1",
+    "ioredis": "4.14.1",
+    "uuid": "3.3.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "7.3.1",
+    "@types/jest": "24.0.23",
+    "coveralls": "3.0.9",
+    "eslint": "5.14.1",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "jest": "24.1.0",
+    "prettier": "1.16.4"
+  },
+  "license": "MIT"
+}
