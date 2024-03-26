@@ -24,7 +24,7 @@
   "dependencies": {
     "cors": "2.8.5",
     "esm": "3.2.25",
-    "express": "4.17.1",
+    "express": "4.19.2",
     "ioredis": "4.14.1",
     "uuid": "3.3.3"
   },
